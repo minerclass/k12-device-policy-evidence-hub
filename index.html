@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mjm-ground="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +12,19 @@
   <meta property="og:url" content="https://minerclass.github.io/k12-device-policy-evidence-hub/">
   <link rel="canonical" href="https://minerclass.github.io/k12-device-policy-evidence-hub/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318334a'/%3E%3Cpath d='M16 18h32v28H16z' fill='none' stroke='%23d7a83e' stroke-width='4'/%3E%3Cpath d='M22 28h20M22 36h14' stroke='%23fffdf8' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://minerclass.github.io/tokens.css">
   <style>
     :root {
-      --ink: #17212b;
-      --paper: #f5f0e6;
+      /* Ground, ink, and rules come from the shared ecosystem tokens at
+         https://minerclass.github.io/tokens.css, with each fallback set to this
+         page's pre-adoption value so a failed load changes nothing.
+         The navy, teal, gold and rust accents stay local: they are this hub's
+         identity, and they are used on DARK navy panels (.hero, .model-container,
+         footer) rather than on the light ground, so they need no lifted variant. */
+      --ink: var(--mjm-ink, #17212b);
+      --paper: var(--mjm-bg, #f5f0e6);
       --paper-2: #ece4d5;
-      --paper-card: #ffffff;
+      --paper-card: var(--mjm-surface, #ffffff);
       --navy: #18334a;
       --navy-light: #254b6d;
       --teal: #176b68;
@@ -25,8 +32,9 @@
       --gold: #d7a83e;
       --gold-dark: #b88a28;
       --rust: #a9472c;
-      --muted: #5c6670;
-      --line: rgba(23, 33, 43, .14);
+      --muted: var(--mjm-muted, #5c6670);
+      --line: var(--mjm-line, rgba(23, 33, 43, .14));
+      --mjm-accent: var(--mjm-gold, #d7a83e);
       --white: #fffdf8;
       --shadow: 0 12px 32px rgba(24, 51, 74, .08);
       --shadow-hover: 0 20px 48px rgba(24, 51, 74, .14);
