@@ -89,7 +89,7 @@ The evidence hub connects across Micah Miner’s four primary public scholarship
 | :--- | :--- | :--- |
 | **✍️ Writing Hub** | • `writing-sites-hub`<br>• `screen-time-wrong-question`<br>• `pouch-and-bypass`<br>• `When-Output-Looks-Like-Learning` | Long-form policy essays, CoSN companion articles, and theoretical reframes. |
 | **🎤 Conference Hub** | • `pedagogical-friction-iste-ascd-decks`<br>• `nlu_ai-ed-conference-pres26`<br>• `screen-practice-compass` | ISTE/ASCD slide decks, interactive workshop reflection tools, and **🖥️ Deck Mode**. |
-| **🎓 Dissertation Hub** | • `dissertation-overview`<br>• `genAI-ML-pedagogy-of-friction-site`<br>• `genAI-ML-the-technologizing-word-site`<br>• `nlu-doccolloquium-may26` | Doctoral proposal gateway, Ongian media ecology, and mixed-methods case study. |
+| **🎓 Dissertation Hub** | • `dissertation-overview`<br>• `genAI-ML-pedagogy-of-friction-site`<br>• `genAI-ML-the-technologizing-word-site`<br>• `nlu-doccolloquium-may26` | Doctoral proposal gateway, Ongian media ecology, and qualitative-dominant convergent mixed methods. |
 | **🎮 Gaming Hubs** | • `games-hub`<br>• `orality_game` (*Keeper of the Word*)<br>• `source_game` (*Keeper of the Source*)<br>• `friction_game` (*Friction Lab*)<br>• `historical-inquiry-friction` | Interactive simulations making media ecology, source judgment, and friction playable. |
 | **🏛️ District Leadership** | • `bpd3-tech-review`<br>• `bpd3-privacy-training`<br>• Beach Park CCSD 3 Governance | Software vetting rubrics, SOPPA/FERPA compliance, and **🖨️ Printable Board Policy Memo**. |
 

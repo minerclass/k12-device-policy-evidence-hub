@@ -57,7 +57,7 @@ This collection connects Micah Miner’s public-facing GitHub Pages repositories
 | :--- | :--- | :--- |
 | [`pedagogical-friction-iste-ascd-decks`](https://minerclass.github.io/pedagogical-friction-iste-ascd-decks/) | Central conference deck repository | High-resolution diagrammatic models of productive vs. exclusionary friction. |
 | [`nlu_ai-ed-conference-pres26`](https://minerclass.github.io/nlu_ai-ed-conference-pres26/) | AI education conference presentation | AI assessment validity, generative writing, and educational leadership policy. |
-| [`nlu-doccolloquium-may26`](https://minerclass.github.io/nlu-doccolloquium-may26/) | Doctoral colloquium presentation | Methodological overview of convergent mixed-methods case study on friction. |
+| [`nlu-doccolloquium-may26`](https://minerclass.github.io/nlu-doccolloquium-may26/) | Doctoral colloquium presentation | Methodological overview of the qualitative-dominant convergent mixed methods design. |
 | [`screen-practice-compass`](https://minerclass.github.io/screen-practice-compass/) | Interactive workshop tool for educator reflection | Categorizes screen tasks across Consumption, Practice, Creation, and Dialogue. |
 | [`interactive-resume-2026`](https://minerclass.github.io/interactive-resume-2026/) | Professional consulting portfolio | Leadership milestones, CETL certification, doctoral research scope. |
 
