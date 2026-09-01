@@ -261,7 +261,10 @@
       align-items: center;
       gap: 6px;
     }
-    .badge-icon { color: var(--gold); }
+    /* Lifted from var(--gold) #d7a83e, which reads 4.39 against the badge's
+       10% white over navy. Scoped here so --gold stays correct everywhere
+       else it is used as a border, fill and heading colour. */
+    .badge-icon { color: #dcb04a; }
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
@@ -424,7 +427,10 @@
       font-size: 1.15rem;
     }
     .model-box.accent-teal h4 { color: #5edcd8; }
-    .model-box.accent-rust h4 { color: #f28b72; }
+    /* Lifted from #f28b72 (4.39) against .model-box, 7% white over navy.
+       18.4px at weight 700 falls just under the 18.66px large-text threshold,
+       so this needs the full 4.5. */
+    .model-box.accent-rust h4 { color: #f4937b; }
     .model-box p {
       margin: 0;
       font-size: .92rem;
