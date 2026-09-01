@@ -1,0 +1,108 @@
+name: Ecosystem Quality Checks
+
+# Terminology guard, matching the linter already running in pedagogical-friction,
+# diss-proposal-defense, and dissertationquestionsbeta. Added here on 2026-09-01
+# after the case-study framing was reintroduced in this repository and took two
+# passes to remove: an automated guard catches it on the push instead.
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint-terminology:
+    name: Terminology Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Terminology Lint Script
+        run: |
+          echo "Scanning for outdated terminology..."
+
+          # Patterns are extended regular expressions, not plain substrings.
+          # This matters: a bare "Yin" substring matches buYINg, studYINg and
+          # applYINg, and a bare "Stake" matches "what is at stake", which is
+          # legitimate prose in this ecosystem. Word boundaries and citation
+          # shapes keep the theorist checks from crying wolf.
+          #
+          # Note also that a bare "case study" must NOT be forbidden here. This
+          # repository correctly describes OTHER researchers' case studies (the
+          # LAUSD 2015 iPad audit, district policy case studies, and the study
+          # design inclusion criteria). Only the constructions that describe
+          # THIS dissertation are blocked.
+
+          # Case-insensitive forbidden patterns: self-descriptive framings only.
+          FORBIDDEN_I=(
+            "collective instrumental case study"
+            "applied case study"
+            "three framework dimensions"
+            "bounded (single )?case"
+            "embedded role-based perspectives"
+            "case[- ]study (design|methodology|approach)"
+            "(mixed[- ]methods|qualitative-dominant)( convergent)?( mixed[- ]methods)? case study"
+          )
+
+          # Case-SENSITIVE forbidden patterns: surnames and citation shapes.
+          FORBIDDEN_S=(
+            "\bMerriam\b"
+            "\bYin\b"
+            "Stake-aligned"
+            "Stake['’]s\b"
+            "\bStake \("
+          )
+
+          # Warnings only. Proposal-stage guardrail: this study has no findings
+          # yet. These fire on secondary reporting too, which is why they warn
+          # rather than block.
+          REVIEW=(
+            "cognitive friction"
+            "results show"
+            "\bproves\b"
+            "validates"
+            "findings demonstrate"
+          )
+
+          # Skip .git, and require -type f for every extension. The precedence
+          # of -o in the sibling repos' version lets non-files through.
+          FILES=$(find . -path ./.git -prune -o -type f \
+            \( -name '*.html' -o -name '*.md' -o -name '*.json' \) -print)
+
+          ERRORS=0
+          WARNINGS=0
+
+          scan() {
+            local file="$1" term="$2" rule="$3" level="$4" flags="$5"
+            local matches
+            matches=$(grep -nE $flags -- "$term" "$file" | grep -iv "terminology-allow" || true)
+            [ -z "$matches" ] && return 1
+            while IFS= read -r line; do
+              local n="${line%%:*}"
+              echo "::$level file=$file,line=$n::$rule: '$term'"
+            done <<< "$matches"
+            return 0
+          }
+
+          for file in $FILES; do
+            for term in "${FORBIDDEN_I[@]}"; do
+              scan "$file" "$term" "Forbidden term (blocked)" "error" "-i" && ERRORS=$((ERRORS+1))
+            done
+            for term in "${FORBIDDEN_S[@]}"; do
+              scan "$file" "$term" "Forbidden term (blocked)" "error" "" && ERRORS=$((ERRORS+1))
+            done
+            for term in "${REVIEW[@]}"; do
+              scan "$file" "$term" "Review required (check context)" "warning" "-i" && WARNINGS=$((WARNINGS+1))
+            done
+          done
+
+          echo "Found $ERRORS errors and $WARNINGS warnings."
+          if [ "$ERRORS" -gt 0 ]; then
+            echo ""
+            echo "The controlling proposal, defended and passed on August 13, 2026, is a"
+            echo "qualitative-dominant convergent mixed methods study with four participant"
+            echo "groups. It uses no case-study apparatus. If a match describes another"
+            echo "researcher's work rather than this dissertation, add a 'terminology-allow'"
+            echo "comment on that line."
+            exit 1
+          fi
