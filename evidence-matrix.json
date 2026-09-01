@@ -1,0 +1,218 @@
+[
+  {
+    "source_id": "TAM_2011_META",
+    "citation": "Tamim, R. M., Bernard, R. M., Borokhovski, E., Abrami, P. C., & Schmid, R. F. (2011). What forty years of research says about the impact of technology on learning: A second-order meta-analysis and validation study. Review of Educational Research, 81(1), 4-28. https://doi.org/10.3102/0034654310393361",
+    "url_or_doi": "https://doi.org/10.3102/0034654310393361",
+    "document_type": "Meta-Analysis",
+    "policy_or_intervention": {
+      "mechanism": "Instructional Technology Integration vs. Direct Delivery",
+      "grade_bands": "System-wide",
+      "enforcement_level": "Research Synthesis"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": true,
+      "friction_dimension_addressed": "Noetic",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Examines constructivist vs direct instruction applications across diverse learner populations."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Achievement", "Cognitive Construction"],
+      "effect_sizes_or_trends": "Overall small to moderate positive effect (g = 0.35). Technology used to support cognitive construction yielded significantly higher effects than technology used for direct delivery/drill (g = 0.42 vs g = 0.16).",
+      "discrepancy_notes": "Highlights that technology presence alone explains minimal variance; the pedagogical task design accounts for the majority of learning gains."
+    },
+    "critical_limitations": "Second-order meta-analysis summarizing pre-2010 studies; predates smartphones and generative AI.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "ZHE_2016_ONE_TO_ONE",
+    "citation": "Zheng, B., Warschauer, M., Lin, C. H., & Chang, C. (2016). Learning in one-to-one laptop environments: A meta-analysis and research synthesis. Review of Educational Research, 86(4), 1052-1084. https://doi.org/10.3102/0034654316628645",
+    "url_or_doi": "https://doi.org/10.3102/0034654316628645",
+    "document_type": "Meta-Analysis",
+    "policy_or_intervention": {
+      "mechanism": "Cart vs Take-Home",
+      "grade_bands": "System-wide",
+      "enforcement_level": "District"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": true,
+      "friction_dimension_addressed": "Infrastructural",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Noted benefits in student-centered writing and research across Title I and diverse student demographics."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Achievement", "Classroom Climate"],
+      "effect_sizes_or_trends": "Significant positive average effect sizes in English/language arts (d = 0.15), writing (d = 0.20), mathematics (d = 0.17), and science (d = 0.25).",
+      "discrepancy_notes": "Program-level success depended heavily on teacher professional development, curriculum integration, and student writing practice rather than device ubiquity."
+    },
+    "critical_limitations": "Data spans 2001 to 2015; reflects an era prior to algorithmic feeds, social media saturation, and automated generative AI essay writers.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "ODG_2020_REVIEW",
+    "citation": "Odgers, C. L., & Jensen, M. R. (2020). Annual research review: Adolescent mental health in the digital age: Facts, fears, and future directions. Journal of Child Psychology and Psychiatry, 61(3), 336-348. https://doi.org/10.1111/jcpp.13190",
+    "url_or_doi": "https://doi.org/10.1111/jcpp.13190",
+    "document_type": "Systematic Review",
+    "policy_or_intervention": {
+      "mechanism": "Screen Quota",
+      "grade_bands": "Middle (6-8) & High (9-12)",
+      "enforcement_level": "Research Synthesis"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": false,
+      "friction_dimension_addressed": "Existential",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Demonstrates that digital platforms amplify existing offline vulnerabilities (economic hardship, family trauma, mental health history)."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Wellbeing", "Attention/Focus", "Equity/Access"],
+      "effect_sizes_or_trends": "Associations between aggregate screen time and adolescent mental health symptoms are near-zero or clinically trivial (median r ≈ -0.05).",
+      "discrepancy_notes": "Directly counters simplistic monocausal displacement narratives by showing that within-person variability and offline social context explain the majority of psychological risk."
+    },
+    "critical_limitations": "Focuses primarily on personal smartphones and social media rather than school-issued LMS or instructional software.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "DUTCH_2025_EVAL",
+    "citation": "Ministry of Education, Culture and Science. (2025). National evaluation of the mobile phone policy in Dutch secondary and primary schools. Government of the Netherlands.",
+    "url_or_doi": "https://www.rijksoverheid.nl/onderwerpen/school-en-veiligheid",
+    "document_type": "Policy Evaluation",
+    "policy_or_intervention": {
+      "mechanism": "Phone Pouch",
+      "grade_bands": "Middle (6-8) | High (9-12)",
+      "enforcement_level": "State/National Mandate"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": false,
+      "friction_dimension_addressed": "Infrastructural",
+      "avoids_device_panacea_fallacy": false,
+      "udl_and_accessibility_considerations": "Exemptions maintained for medical needs (e.g. glucose monitoring) and specific instructional tasks."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Attention/Focus", "Classroom Climate", "Achievement"],
+      "effect_sizes_or_trends": "75% of secondary schools reported perceived improvements in student concentration; 66% reported improved social atmosphere; only 33% observed measurable academic gains.",
+      "discrepancy_notes": "Major divergence between high perceived social/attentional calm and modest measurable academic attainment gains."
+    },
+    "critical_limitations": "Relies predominantly on administrator and educator perceptual survey data rather than standardized longitudinal achievement metrics.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "SMART_2024_STUDY",
+    "citation": "Kieling, C., et al. (2024). The SMART Schools Study: Evaluating the impact of school smartphone policies on adolescent mental health and educational attainment. The Lancet Regional Health - Europe, 38, 100842. https://doi.org/10.1016/j.lanepe.2024.100842",
+    "url_or_doi": "https://doi.org/10.1016/j.lanepe.2024.100842",
+    "document_type": "Empirical Study",
+    "policy_or_intervention": {
+      "mechanism": "Locker Policy",
+      "grade_bands": "Middle (6-8) | High (9-12)",
+      "enforcement_level": "Building"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": false,
+      "friction_dimension_addressed": "Infrastructural",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Controlled for socioeconomic deprivation index and baseline pupil health."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Wellbeing", "Achievement", "Attention/Focus"],
+      "effect_sizes_or_trends": "No statistically significant differences between schools with strict phone bans and schools with flexible policies across adolescent wellbeing, sleep quality, anxiety, or academic attainment.",
+      "discrepancy_notes": "Contrasts sharply with popular policy assumptions that banning phones will automatically repair mental health metrics."
+    },
+    "critical_limitations": "Quasi-experimental observational design with potential unmeasured school-level cultural confounders.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "SWE_2024_TEXTBOOK",
+    "citation": "Government Offices of Sweden. (2024). Government investing in more reading time and less screen time: Reversing early digital mandates in preschool and primary education. Ministry of Education and Research.",
+    "url_or_doi": "https://www.government.se/articles/2024/02/government-investing-in-more-reading-time-and-less-screen-time/",
+    "document_type": "Policy Evaluation",
+    "policy_or_intervention": {
+      "mechanism": "Analogue Mandate",
+      "grade_bands": "Elementary (K-5)",
+      "enforcement_level": "State/National Mandate"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": true,
+      "friction_dimension_addressed": "Multi-layer",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Focus on early literacy development, neurodevelopmental handwriting practice, and tactile reading engagement."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Achievement", "Attention/Focus"],
+      "effect_sizes_or_trends": "Triggered by PIRLS 4th-grade reading scores declining from 555 (2016) to 544 (2021). National budget allocated ~€100M+ to guarantee physical textbooks for every student.",
+      "discrepancy_notes": "Represents the purest national example of an instructional reversal (moving from digital apps back to physical print and handwriting) rather than a mere phone ban."
+    },
+    "critical_limitations": "Longitudinal achievement recovery data following the textbook reinvestment remains in progress.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "UNESCO_2023_GEM",
+    "citation": "Global Education Monitoring Report Team. (2023). Technology in education: A tool on whose terms? UNESCO. https://doi.org/10.54675/QBKP7378",
+    "url_or_doi": "https://gem-report-2023.unesco.org/",
+    "document_type": "Policy Evaluation",
+    "policy_or_intervention": {
+      "mechanism": "Screen Quota",
+      "grade_bands": "System-wide",
+      "enforcement_level": "State/National Mandate"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": true,
+      "friction_dimension_addressed": "Multi-layer",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Highlights that 89% of 163 edtech products surveyed during pandemic remote learning infringed or risked children's data privacy."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Equity/Access", "Achievement", "Wellbeing"],
+      "effect_sizes_or_trends": "Technology supports learning only when subordinate to human pedagogy; warns that uncritical digital adoption deepens inequality and diverts funding from foundational infrastructure.",
+      "discrepancy_notes": "Frames the device debate around governance, privacy, and commercial surveillance rather than simplistic screen moral panics."
+    },
+    "critical_limitations": "Global scope spans highly disparate infrastructure contexts, from high-income 1:1 districts to low-resource classrooms without electricity.",
+    "relevance_score": 5
+  },
+  {
+    "source_id": "LAUSD_2015_IPAD_AUDIT",
+    "citation": "Lapin, H. A. (2015). Investigation of the Los Angeles Unified School District Common Core Technology Project and iPad deployment. Office of the Inspector General, LAUSD.",
+    "url_or_doi": "https://edtech.lausd.org/",
+    "document_type": "District Policy Case",
+    "policy_or_intervention": {
+      "mechanism": "Cart vs Take-Home",
+      "grade_bands": "System-wide",
+      "enforcement_level": "District"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": false,
+      "friction_dimension_addressed": "Infrastructural",
+      "avoids_device_panacea_fallacy": false,
+      "udl_and_accessibility_considerations": "Purchased for $1.3B bond funding; Pearson digital curriculum was incomplete; devices bypassed within 48 hours; teacher professional learning was absent."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Equity/Access", "Achievement"],
+      "effect_sizes_or_trends": "Complete program cancellation following procurement scandal, federal investigation, and student bypass of security profiles.",
+      "discrepancy_notes": "Canonical case study illustrating that the most spectacular device failure in U.S. history was rooted in governance, vendor capture, and absent pedagogy rather than cognitive screen effects."
+    },
+    "critical_limitations": "Qualitative case study and investigative audit report; specific to procurement context of 2013-2015.",
+    "relevance_score": 4
+  },
+  {
+    "source_id": "DEL_2018_READING_META",
+    "citation": "Delgado, P., Vargas, C., Ackerman, R., & Salmeron, L. (2018). Don't throw away your printed books: A meta-analysis on the effects of reading media on reading comprehension. Educational Research Review, 25, 23-38. https://doi.org/10.1016/j.edurev.2018.09.003",
+    "url_or_doi": "https://doi.org/10.1016/j.edurev.2018.09.003",
+    "document_type": "Meta-Analysis",
+    "policy_or_intervention": {
+      "mechanism": "Analogue Mandate",
+      "grade_bands": "System-wide",
+      "enforcement_level": "Research Synthesis"
+    },
+    "theoretical_framing": {
+      "considers_instructional_design": true,
+      "friction_dimension_addressed": "Noetic",
+      "avoids_device_panacea_fallacy": true,
+      "udl_and_accessibility_considerations": "Screen inferiority effect was larger for informational texts and under time constraints."
+    },
+    "findings_summary": {
+      "measured_outcomes": ["Achievement", "Attention/Focus"],
+      "effect_sizes_or_trends": "Significant print advantage for reading comprehension (g = -0.21). The screen disadvantage increased over time (2000-2017), refuting the digital natives hypothesis.",
+      "discrepancy_notes": "Shows that cognitive friction in linear reading is diminished on screens due to shallow skimming habits."
+    },
+    "critical_limitations": "Laboratory and classroom experimental tasks; did not evaluate modern adaptive e-readers with accessibility accommodations.",
+    "relevance_score": 5
+  }
+]
