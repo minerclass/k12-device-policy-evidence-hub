@@ -20,7 +20,7 @@ This collection connects Micah Miner’s public-facing GitHub Pages repositories
          ▼                       ▼                                               ▼                       ▼
 ┌─────────────────┐     ┌─────────────────┐                             ┌─────────────────┐     ┌─────────────────┐
 │  WRITING HUB    │     │ CONFERENCE HUB  │                             │DISSERTATION HUB │     │   GAMING HUBS   │
-│ Long-form essay │     │ Session decks & │                             │ Case study &    │     │ Simulations &   │
+│ Long-form essay │     │ Session decks & │                             │ Mixed methods & │     │ Simulations &   │
 │ & CoSN briefs   │     │ workshop tools  │                             │ theory portals  │     │ friction labs   │
 └────────┬────────┘     └────────┬────────┘                             └────────┬────────┘     └────────┬────────┘
          │                       │                                               │                       │
@@ -68,10 +68,10 @@ This collection connects Micah Miner’s public-facing GitHub Pages repositories
 
 | Repository & Live Link | Role in Dissertation Architecture | Theoretical Constructs Explored |
 | :--- | :--- | :--- |
-| [`dissertation-overview`](https://minerclass.github.io/dissertation-overview/) | Public gateway to doctoral research | Bounded single case study design with embedded role-based perspectives. |
+| [`dissertation-overview`](https://minerclass.github.io/dissertation-overview/) | Public gateway to doctoral research | Qualitative-dominant convergent mixed methods design with four participant groups. |
 | [`genAI-ML-pedagogy-of-friction-site`](https://minerclass.github.io/genAI-ML-pedagogy-of-friction-site/) | Theoretical home for friction framework | Noetic, rhetorical, existential, and infrastructural friction dimensions. |
 | [`genAI-ML-the-technologizing-word-site`](https://minerclass.github.io/genAI-ML-the-technologizing-word-site/) | Ongian media ecology and algorithmicity | Five stages of orality and literacy through algorithmic secondary orality. |
-| [`qualifying-dissertation-resource-site`](https://minerclass.github.io/qualifying-dissertation-resource-site/) | Qualifying paper bridge & literature hub | Core research questions, theoretical foundations, qualitative-dominant case study. |
+| [`qualifying-dissertation-resource-site`](https://minerclass.github.io/qualifying-dissertation-resource-site/) | Qualifying paper bridge & literature hub | Core research questions, theoretical foundations, qualitative-dominant convergent mixed methods design. |
 
 ---
 

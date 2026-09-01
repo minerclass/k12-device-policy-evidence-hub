@@ -84,7 +84,7 @@ This repository serves as an empirical evidence gateway connecting multiple publ
    - **[AI Education Conference](https://minerclass.github.io/nlu_ai-ed-conference-pres26/):** Keynote and session deck on AI assessment validity.
    - **[Screen Practice Compass](https://minerclass.github.io/screen-practice-compass/):** Interactive reflection tool for educator workshops.
 3. **🎓 Dissertation & Theoretical Hub:**
-   - **[Dissertation Overview Gateway](https://minerclass.github.io/dissertation-overview/):** Doctoral research portal and case study methodology.
+   - **[Dissertation Overview Gateway](https://minerclass.github.io/dissertation-overview/):** Doctoral research portal and convergent mixed methods methodology.
    - **[Pedagogy of Friction Hub](https://minerclass.github.io/genAI-ML-pedagogy-of-friction-site/):** Theoretical exploration of noetic, rhetorical, existential, and infrastructural friction.
    - **[When Output Looks Like Learning](https://minerclass.github.io/When-Output-Looks-Like-Learning/):** Companion on tertiary algorithmicity and unproductive success.
 4. **🎮 Gaming Hubs & Simulations:**
