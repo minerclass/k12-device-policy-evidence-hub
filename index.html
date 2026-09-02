@@ -229,10 +229,14 @@
       margin-bottom: 12px;
     }
     .hero h1 {
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.15;
-      font-weight: 850;
-      letter-spacing: -.03em;
+      /* Georgia display, matching the pouch-and-bypass companion and the rest
+         of the writing-side ecosystem. Sans at weight 850 read as a product
+         page rather than an argument. */
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 4.4vw, 3.5rem);
+      line-height: 1.08;
+      font-weight: 700;
+      letter-spacing: -.02em;
       margin: 0 0 18px;
       max-width: 960px;
     }
@@ -242,6 +246,34 @@
       color: rgba(255,255,255,.9);
       max-width: 860px;
       margin: 0 0 28px;
+    }
+    /* .hero-grid was already referenced in the mobile media query but never
+       defined or used: a two-column hero planned and never built. */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: clamp(28px, 4vw, 60px);
+      align-items: center;
+    }
+    .hero-premise {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: var(--radius);
+      padding: clamp(22px, 2.6vw, 32px);
+    }
+    .hero-premise .premise-label {
+      display: block;
+      font-size: .72rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .12em;
+      /* lifted for the card's 7%-white surface, as .badge-icon */
+      color: #dcb04a;
+      margin-bottom: 12px;
+    }
+    .hero-premise p {
+      font-family: var(--serif);
+      font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+      line-height: 1.5; margin: 0;
+      color: rgba(255,255,255,.94);
     }
     .hero-badges {
       display: flex;
@@ -798,17 +830,14 @@
   <header class="site-nav">
     <div class="shell nav-inner">
       <a href="#" class="brand">
-        <span>Device Policy & Friction Hub</span>
-        <span class="brand-tag">Evidence Matrix</span>
+        <span>Device Policy &amp; Friction Hub</span>
       </a>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#framework">Framework</a></li>
-          <li><a href="#collection">Repository Collection</a></li>
-          <li><a href="#diagnostics">4 Diagnostics</a></li>
-          <li><a href="#evidence">Evidence Matrix</a></li>
+          <li><a href="#evidence">Evidence</a></li>
           <li><a href="#audit">Policy Audit</a></li>
-          <li><a href="#protocol">Search Protocol</a></li>
+          <li><a href="#collection">Collection</a></li>
           <li><button class="nav-btn-alt" onclick="togglePresentationMode()">🖥️ Deck Mode</button></li>
           <li><a href="https://minerclass.github.io/screen-time-wrong-question/pouch-and-bypass/" class="nav-btn" target="_blank" rel="noopener">Pouch & Bypass ↗</a></li>
         </ul>
@@ -820,6 +849,8 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="shell">
+        <div class="hero-grid">
+          <div>
         <span class="hero-eyebrow">K–12 Educational Technology Leadership & Media Ecology</span>
         <h1>Beyond Containment: Screen Policy, Device Access Models, and Pedagogical Friction</h1>
         <p class="hero-lead">
@@ -827,14 +858,19 @@
         </p>
         <div class="hero-badges">
           <div class="badge"><span class="badge-icon">✓</span> Meta-Analyses (Tamim et al., Zheng et al.)</div>
-          <div class="badge"><span class="badge-icon">✓</span> Haidt–Odgers–Horvath Boundary Analysis</div>
-          <div class="badge"><span class="badge-icon">✓</span> 4 Friction Dimensions (Noetic, Rhetorical, Existential, Infrastructural)</div>
           <div class="badge"><span class="badge-icon">✓</span> 6-Question District Policy Audit</div>
         </div>
         <div class="hero-actions">
           <a href="#evidence" class="btn btn-gold">Explore Evidence Matrix</a>
           <a href="#audit" class="btn btn-ghost">Run 6-Question Policy Audit</a>
-          <a href="#collection" class="btn btn-ghost">Connected Repositories</a>
+          </div>
+          </div>
+          <aside class="hero-premise">
+            <span class="premise-label">The central premise</span>
+            <p>A pouch, a locker mandate, or a cart rollback changes the
+            <em>channel</em> of access. It does not change the pedagogical
+            design of the lesson waiting on the other side of it.</p>
+          </aside>
         </div>
       </div>
     </section>
