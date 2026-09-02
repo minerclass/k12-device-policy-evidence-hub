@@ -115,6 +115,35 @@
       text-transform: uppercase;
       letter-spacing: .05em;
     }
+    /* Disclosure toggle. Hidden above the breakpoint; the bar is a plain row
+       there. Below it, this is the only way to reach Deck Mode and the Pouch
+       cross-link, which the old rule hid outright. */
+    .nav-toggle {
+      display: none;
+      width: 44px; height: 44px;
+      align-items: center; justify-content: center;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+    .nav-toggle-bars,
+    .nav-toggle-bars::before,
+    .nav-toggle-bars::after {
+      content: "";
+      display: block;
+      width: 18px; height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .nav-toggle-bars { position: relative; }
+    .nav-toggle-bars::before { position: absolute; top: -6px; }
+    .nav-toggle-bars::after  { position: absolute; top: 6px; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bars::after  { top: 0; transform: rotate(-45deg); }
+
     .nav-links {
       display: flex;
       gap: 18px;
@@ -818,7 +847,39 @@
     }
 
     @media (max-width: 768px) {
-      .nav-links { display: none; }
+      .nav-toggle { display: inline-flex; }
+      /* Was `display: none`, which hid Deck Mode and the Pouch cross-link with
+         no way to reach either on a phone. Now a disclosure panel. */
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0; right: 0;
+        top: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px;
+        /* Fully opaque: the header itself is translucent with a backdrop
+           blur, which is fine for a thin bar but let the hero headline
+           ghost through a tall dropdown. */
+        background: var(--navy);
+        border-bottom: 1px solid rgba(255,255,255,.14);
+        box-shadow: 0 18px 40px rgba(0,0,0,.45);
+        z-index: 101;
+      }
+      .nav-links[data-open="true"] { display: flex; }
+      .nav-links li { width: 100%; }
+      /* 44px targets, per WCAG 2.5.8 */
+      .nav-links a,
+      .nav-links button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 0 12px;
+        font-size: .95rem;
+        border-radius: var(--radius-sm);
+      }
       .hero-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -832,8 +893,12 @@
       <a href="#" class="brand">
         <span>Device Policy &amp; Friction Hub</span>
       </a>
+      <button class="nav-toggle" type="button" id="navToggle"
+              aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
       <nav aria-label="Main Navigation">
-        <ul class="nav-links">
+        <ul class="nav-links" id="primaryNav">
           <li><a href="#framework">Framework</a></li>
           <li><a href="#evidence">Evidence</a></li>
           <li><a href="#audit">Policy Audit</a></li>
@@ -1574,6 +1639,51 @@
       
       window.print();
     }
+
+
+    /* ---- Mobile navigation disclosure --------------------------------------
+       Below 768px the bar collapses to a toggle. Everything here is keyboard
+       reachable: Escape closes and returns focus to the button, a click outside
+       closes, and following any link closes the panel since every destination
+       except the Pouch cross-link is an in-page anchor. */
+    (function () {
+      const toggle = document.getElementById('navToggle');
+      const panel  = document.getElementById('primaryNav');
+      if (!toggle || !panel) return;
+
+      const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        if (open) { panel.setAttribute('data-open', 'true'); }
+        else { panel.removeAttribute('data-open'); }
+      }
+
+      toggle.addEventListener('click', () => setOpen(!isOpen()));
+
+      panel.addEventListener('click', (e) => {
+        if (e.target.closest('a, button')) setOpen(false);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen()) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!isOpen()) return;
+        if (!panel.contains(e.target) && !toggle.contains(e.target)) setOpen(false);
+      });
+
+      // Leaving the mobile breakpoint with the panel open would otherwise strand
+      // data-open on a bar that is a plain row again.
+      const mq = window.matchMedia('(max-width: 768px)');
+      const sync = () => { if (!mq.matches) setOpen(false); };
+      mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync);
+    })();
 
     // Initial render
     document.addEventListener('DOMContentLoaded', () => {
