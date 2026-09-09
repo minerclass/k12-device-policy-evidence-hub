@@ -8,6 +8,12 @@ A research clearinghouse, empirical evidence matrix, and policy diagnostic platf
 
 ---
 
+## Source Verification
+
+Every entry in the evidence matrix is checked against its DOI or resolving URL. See **[VERIFICATION.md](VERIFICATION.md)** for the audit log: what was verified, what was corrected, and which figures still need full-text access. Last audit: September 9, 2026.
+
+---
+
 ## Live Interactive Hub
 
 Access the live single-page application and interactive diagnostic tools on GitHub Pages:
