@@ -58,7 +58,7 @@ Micah J. Miner is Director of Innovation and Technology for Beach Park CCSD 3 an
    * **Tamim et al. (2011) 2nd-Order Meta-Analysis:** Technology supporting student cognitive construction yields $g = 0.42$; technology used for direct delivery/drill yields $g = 0.16$.
    * **Zheng, Warschauer et al. (2016) 1:1 Meta-Analysis:** 1:1 laptop programs achieved significant positive effect sizes in writing ($d=0.20$), science ($d=0.25$), math ($d=0.17$), and ELA ($d=0.15$), complicating simplistic claims that classroom devices are inherently harmful.
    * **Delgado et al. (2018) Reading Meta-Analysis:** Robust print advantage ($g = -0.21$) for informational text comprehension over digital screens.
-   * **Dutch Phone Ban (2025) vs. UK SMART Schools (2024):** Divergence between high perceived classroom calm (75%) and flat measured academic/mental health outcomes, demonstrating *unproductive success* at the system policy level.
+   * **Dutch Phone Ban (2025) vs. UK SMART Schools (Goodyear et al., 2025):** Divergence between high perceived classroom calm (75%) and flat measured academic/mental health outcomes, demonstrating *unproductive success* at the system policy level.
 
 ---
 

@@ -96,12 +96,12 @@
     "relevance_score": 5
   },
   {
-    "source_id": "SMART_2024_STUDY",
-    "citation": "Kieling, C., et al. (2024). The SMART Schools Study: Evaluating the impact of school smartphone policies on adolescent mental health and educational attainment. The Lancet Regional Health - Europe, 38, 100842. https://doi.org/10.1016/j.lanepe.2024.100842",
-    "url_or_doi": "https://doi.org/10.1016/j.lanepe.2024.100842",
+    "source_id": "SMART_2025_STUDY",
+    "citation": "Goodyear, V. A., Randhawa, A., Adab, P., Al-Janabi, H., Fenton, S., Jones, K., Michail, M., Morrison, B., Patterson, P., Quinlan, J., Sitch, A., Twardochleb, R., Wade, M., & Pallan, M. (2025). School phone policies and their association with mental wellbeing, phone use, and social media use (SMART Schools): A cross-sectional observational study. The Lancet Regional Health - Europe, 51, Article 101211. https://doi.org/10.1016/j.lanepe.2025.101211",
+    "url_or_doi": "https://doi.org/10.1016/j.lanepe.2025.101211",
     "document_type": "Empirical Study",
     "policy_or_intervention": {
-      "mechanism": "Locker Policy",
+      "mechanism": "Restrictive school phone policy (phones off, kept in bags)",
       "grade_bands": "Middle (6-8) | High (9-12)",
       "enforcement_level": "Building"
     },
@@ -109,7 +109,7 @@
       "considers_instructional_design": false,
       "friction_dimension_addressed": "Infrastructural",
       "avoids_device_panacea_fallacy": true,
-      "udl_and_accessibility_considerations": "Controlled for socioeconomic deprivation index and baseline pupil health."
+      "udl_and_accessibility_considerations": "Not an equity-focused design; school-level comparison rather than within-student analysis."
     },
     "findings_summary": {
       "measured_outcomes": ["Wellbeing", "Achievement", "Attention/Focus"],
