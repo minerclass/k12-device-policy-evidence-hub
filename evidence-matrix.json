@@ -73,8 +73,8 @@
   },
   {
     "source_id": "DUTCH_2025_EVAL",
-    "citation": "Ministry of Education, Culture and Science. (2025). National evaluation of the mobile phone policy in Dutch secondary and primary schools. Government of the Netherlands.",
-    "url_or_doi": "https://www.rijksoverheid.nl/onderwerpen/school-en-veiligheid",
+    "citation": "Netherlands national evaluation of the school mobile phone ban (reported March 2025). Commissioned evaluation surveying 317 secondary school leaders and 313 primary schools with 12 focus groups. Summary via Eurydice, European Commission. https://eurydice.eacea.ec.europa.eu/news/netherlands-ban-mobile-phones-classroom",
+    "url_or_doi": "https://eurydice.eacea.ec.europa.eu/news/netherlands-ban-mobile-phones-classroom",
     "document_type": "Policy Evaluation",
     "policy_or_intervention": {
       "mechanism": "Phone Pouch",
@@ -145,7 +145,7 @@
   },
   {
     "source_id": "UNESCO_2023_GEM",
-    "citation": "Global Education Monitoring Report Team. (2023). Technology in education: A tool on whose terms? UNESCO. https://doi.org/10.54675/QBKP7378",
+    "citation": "Global Education Monitoring Report Team. (2023). Technology in education: A tool on whose terms? UNESCO. https://unesdoc.unesco.org/ark:/48223/pf0000385723",
     "url_or_doi": "https://gem-report-2023.unesco.org/",
     "document_type": "Policy Evaluation",
     "policy_or_intervention": {
