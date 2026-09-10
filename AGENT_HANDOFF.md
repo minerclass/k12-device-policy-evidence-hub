@@ -55,7 +55,7 @@ Micah J. Miner is Director of Innovation and Technology for Beach Park CCSD 3 an
    * **Candice Odgers (Methodological Counterweight):** Highlights within-person variance, near-zero average associations ($r \approx -0.05$), and the reality that digital tools replicate and amplify pre-existing offline vulnerabilities.
    * **Jared Cooney Horvath (*The Digital Delusion*):** Emphasizes task-level cognitive offloading, handwriting benefits, and shallow digital reading habits.
 4. **Empirical Meta-Analytic Baselines:**
-   * **Tamim et al. (2011) 2nd-Order Meta-Analysis:** Technology supporting student cognitive construction yields $g = 0.42$; technology used for direct delivery/drill yields $g = 0.16$.
+   * **Tamim et al. (2011) 2nd-Order Meta-Analysis:** Technology supporting student cognitive construction yields $ES = 0.42$ (k = 10); technology used for direct instruction yields $ES = 0.31$ (k = 15). Both are moderate positive effects; the contrast is one of degree, not of presence versus absence.
    * **Zheng, Warschauer et al. (2016) 1:1 Meta-Analysis:** 1:1 laptop programs achieved significant positive effect sizes in writing ($d=0.20$), science ($d=0.25$), math ($d=0.17$), and ELA ($d=0.15$), complicating simplistic claims that classroom devices are inherently harmful.
    * **Delgado et al. (2018) Reading Meta-Analysis:** Robust print advantage ($g = -0.21$) for informational text comprehension over digital screens.
    * **Dutch Phone Ban (2025) vs. UK SMART Schools (Goodyear et al., 2025):** Divergence between high perceived classroom calm (75%) and flat measured academic/mental health outcomes, demonstrating *unproductive success* at the system policy level.

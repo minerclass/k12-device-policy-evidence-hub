@@ -1,6 +1,6 @@
 # Source Verification Log
 
-Last audit: **September 9, 2026.**
+Last audit: **September 9, 2026** (second pass, same day, resolved the pending full-text items).
 
 Every entry in `evidence-matrix.json` was checked against its identifier. This log records what was verified, how, and what remains open. Update it whenever an entry is added or a pending item is resolved.
 
@@ -30,6 +30,8 @@ Every entry in `evidence-matrix.json` was checked against its identifier. This l
 | :--- | :--- | :--- |
 | Delgado print advantage `g = −0.21` | "Both designs yielded the same advantage of paper over digital reading (Hedge's g = −0.21; dc = −0.21)." | **Confirmed.** Note this is the *overall* effect across genres, not an informational-text-specific figure. Genre is a moderator: the advantage held for informational and mixed texts but not for narrative-only studies. |
 | Tamim overall mean `0.35` | "The random effects mean effect size of 0.35 was significantly different from zero." Validation subset: 0.33. | **Confirmed** from the published abstract. |
+| Tamim support of instruction `0.42` | Table 3, ES = 0.42, k = 10. | **Confirmed** against the full text. |
+| Tamim direct instruction | Table 3, ES = 0.31, k = 15. | **Matrix was wrong.** It listed 0.16. Corrected to 0.31. Arithmetic check: 0.42(10) + 0.31(15) weight-averages to 0.354, matching the published overall mean of 0.35. A 0.42/0.16 split cannot produce that mean. |
 
 ## Corrected in this audit
 
@@ -42,32 +44,38 @@ Every entry in `evidence-matrix.json` was checked against its identifier. This l
 
 ---
 
-## Pending — needs full-text access
+## Resolved in the second pass
 
-Both papers are paywalled with no open-access copy (checked via Unpaywall). The **citations are verified**; only the subgroup figures drawn from them are outstanding.
+### `TAM_2011_META` — contradicted and corrected
 
-### 1. `TAM_2011_META` — the support-versus-direct-instruction split
+Full text obtained. **Table 3 reports ES = 0.42 (k = 10) for technology used to support instruction and ES = 0.31 (k = 15) for direct instruction.** The matrix had listed 0.16 for the direct-instruction subgroup, understating it by 0.15 standardized units.
 
-The matrix states cognitive construction `g ≈ 0.42` against direct delivery `g ≈ 0.16`.
+The characterization built on that number — that direct delivery yields "negligible or negative outcomes" — was also wrong and has been removed everywhere it appeared. Both subgroups show moderate positive effects. The defensible finding is that supporting cognitive construction outperforms direct delivery by a meaningful margin, not that direct delivery is inert.
 
-The 0.42 figure is consistent with the paper's reported effect for technology used to *support* instruction. **The 0.16 figure is doubtful.** The paper's overall random-effects mean is 0.35, and a 0.42/0.16 split is difficult to reconcile with that mean unless the sample is heavily unbalanced toward the higher group. A direct-instruction figure nearer 0.30 would sit more naturally against 0.35.
+Corrected in `evidence-matrix.md` (executive synthesis and comparative table), `evidence-matrix.json`, `index.html` (diagnostic narrative and data object), and `AGENT_HANDOFF.md`.
 
-Do not cite 0.16 publicly until it has been checked against pp. 4–28 of the published article.
+---
 
-### 2. `ZHE_2016_ONE_TO_ONE` — the subject-area effect sizes
+## Still pending
 
-The matrix states writing `d = 0.20`, science `d = 0.25`, mathematics `d = 0.17`.
+### 1. `ZHE_2016_ONE_TO_ONE` — subject-area values not accessible
 
-The abstract confirms only that the meta-analysis of 10 studies found "significantly positive average effect sizes in English, writing, mathematics, and science" without publishing the values. The writing and science figures are plausible; the mathematics figure may be 0.16 rather than 0.17. The effect-size metric should also be confirmed, since the matrix labels these `d` while the other entries use Hedges' `g`.
+The published abstract confirms only that the meta-analysis of 10 studies found "significantly positive average effect sizes in English, writing, mathematics, and science." It does not publish the values, and the results table was not accessible. The paper is paywalled with no open-access copy.
 
-### 3. `LAUSD_2015_IPAD_AUDIT` — the $1.3B and 48-hour figures
+The previously listed values (ELA 0.15, writing 0.20, mathematics 0.17, science 0.25) and their `d` metric label are now **marked unverified in the matrix** rather than presented as sourced figures. Do not restore them from a media summary — only from the article's results table.
 
-The LAUSD Common Core Technology Project and its collapse are well documented, and the `edtech.lausd.org` URL resolves. The specific $1.3 billion bond figure and the "bypass in 48 hours" detail were not traced to the Inspector General report itself in this audit.
+### 2. `LAUSD_2015_IPAD_AUDIT` — figures not traced to the cited report
+
+The specific 2015 Inspector General report was not obtained from the LAUSD OIG index, and neither the **$1.3 billion** figure nor the **48-hour bypass** timing could be traced to it.
+
+Contemporary press coverage describes a roughly $1.3-billion iPads-for-all plan and reports that students at several campuses removed security filters, but neither establishes OIG attribution, and no accessible source states the 48-hour timing.
+
+Both claims are now flagged in the matrix as not attributable to the OIG report. Either locate the passage in the original document or re-cite to an accessible source that states the figure. The 48-hour detail should be deleted outright unless a primary source is found.
 
 ---
 
 ## Note on the failure pattern
 
-Three of nine entries carried fabricated or unresolvable identifiers, and all three were sources whose metadata is hard to verify from memory: two government grey-literature evaluations and one recent journal article. Every entry with a long-established DOI from a major journal checked out perfectly on the first pass.
+Three of nine entries carried fabricated or unresolvable identifiers, and a fourth carried a fabricated effect size. All of them were claims whose verification is hard: two government grey-literature evaluations, one recent journal article, and a moderator estimate buried in a paywalled table. Every entry with a long-established DOI from a major journal checked out perfectly on the first pass, and every figure printed in an accessible abstract was accurate.
 
-That is the characteristic signature of generated citations — accurate where verification is easy, invented where it is hard. Any future addition to this matrix should be resolved against its DOI before it is committed, and grey literature should carry a URL that has been fetched, not inferred.
+That is the characteristic signature of generated content — accurate where verification is easy, invented where it is hard. Two rules follow. Resolve every new entry against its DOI before committing it. And treat any numeric claim drawn from behind a paywall as unverified until someone has opened the table, no matter how plausible it looks next to the numbers around it.

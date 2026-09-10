@@ -17,7 +17,7 @@
     },
     "findings_summary": {
       "measured_outcomes": ["Achievement", "Cognitive Construction"],
-      "effect_sizes_or_trends": "Overall small to moderate positive effect (g = 0.35). Technology used to support cognitive construction yielded significantly higher effects than technology used for direct delivery/drill (g = 0.42 vs g = 0.16).",
+      "effect_sizes_or_trends": "Overall small to moderate positive effect (random effects mean ES = 0.35; validation subset 0.33). Table 3 moderator analysis: technology used to SUPPORT instruction ES = 0.42 (k = 10) versus technology used for DIRECT instruction ES = 0.31 (k = 15). Both subgroups show moderate positive effects; the difference is one of degree.",
       "discrepancy_notes": "Highlights that technology presence alone explains minimal variance; the pedagogical task design accounts for the majority of learning gains."
     },
     "critical_limitations": "Second-order meta-analysis summarizing pre-2010 studies; predates smartphones and generative AI.",
@@ -41,7 +41,7 @@
     },
     "findings_summary": {
       "measured_outcomes": ["Achievement", "Classroom Climate"],
-      "effect_sizes_or_trends": "Significant positive average effect sizes in English/language arts (d = 0.15), writing (d = 0.20), mathematics (d = 0.17), and science (d = 0.25).",
+      "effect_sizes_or_trends": "The published abstract confirms significant positive average effect sizes in English, writing, mathematics, and science across a meta-analysis of 10 studies, but does not publish the values. Subject-area estimates previously listed here (ELA 0.15, writing 0.20, mathematics 0.17, science 0.25) and their metric label are UNVERIFIED against the results table. See VERIFICATION.md.",
       "discrepancy_notes": "Program-level success depended heavily on teacher professional development, curriculum integration, and student writing practice rather than device ubiquity."
     },
     "critical_limitations": "Data spans 2001 to 2015; reflects an era prior to algorithmic feeds, social media saturation, and automated generative AI essay writers.",
@@ -181,7 +181,7 @@
       "considers_instructional_design": false,
       "friction_dimension_addressed": "Infrastructural",
       "avoids_device_panacea_fallacy": false,
-      "udl_and_accessibility_considerations": "Purchased for $1.3B bond funding; Pearson digital curriculum was incomplete; devices bypassed within 48 hours; teacher professional learning was absent."
+      "udl_and_accessibility_considerations": "Bond-funded 1:1 iPad initiative widely reported at roughly $1.3 billion in scope; the Pearson digital curriculum was incomplete at deployment; students at several campuses removed security filters. The specific dollar figure and the frequently repeated 48-hour bypass timing are NOT traced to the Inspector General report and should not be attributed to it. See VERIFICATION.md."
     },
     "findings_summary": {
       "measured_outcomes": ["Equity/Access", "Achievement"],

@@ -12,7 +12,7 @@ This evidence matrix synthesizes peer-reviewed meta-analyses, large-scale longit
 ### Key Takeaways
 
 1. **The Infrastructure vs. Pedagogy Test:**
-   Meta-analytic evidence (Tamim et al., 2011; Zheng et al., 2016) demonstrates that device presence or absence accounts for a minimal share of learning variance. Technology used to support active cognitive construction yields strong positive effect sizes ($g \approx 0.42$), whereas technology used for passive delivery, drill, or low-friction surveillance yields negligible or negative outcomes ($g \approx 0.16$).
+   Meta-analytic evidence (Tamim et al., 2011; Zheng et al., 2016) demonstrates that device presence or absence accounts for a minimal share of learning variance. Tamim et al. report an overall random-effects mean of $ES = 0.35$, and their Table 3 moderator analysis distinguishes technology used to **support** instruction ($ES = 0.42$, k = 10) from technology used for **direct** instruction ($ES = 0.31$, k = 15). Both are moderate positive effects. The finding is that supporting cognitive construction outperforms direct delivery by a meaningful margin — not that direct delivery is inert.
 
 2. **Perception vs. Measurement Divergence (The Unproductive Success Gap):**
    The Dutch National Phone Ban Evaluation (2025) and the UK SMART Schools Study (Goodyear et al., 2025) reveal an essential divergence: while roughly 75% of educators report improved classroom calm when phones are pouched or locked, objective measures of academic attainment and adolescent mental health remain statistically flat. Containing the hardware creates the *feeling* of reform without addressing the underlying instructional design.
@@ -21,7 +21,7 @@ This evidence matrix synthesizes peer-reviewed meta-analyses, large-scale longit
    Delgado et al. (2018) report a print advantage over digital reading of $g = -0.21$ overall, across both between- and within-participants designs (171,055 participants). Text genre is a significant moderator: the advantage held for informational texts and for mixed informational/narrative sets, but **not** for studies using narrative texts alone. The advantage also increased under time-constrained reading and grew across publication years. This helps explain why national reversals such as Sweden’s reinvestment in physical textbooks target foundational reading and handwriting rather than merely banning smartphones.
 
 4. **Governance Over Hardware:**
-   The $1.3B LAUSD iPad collapse (2013–2015) and UNESCO’s GEM Report (2023) prove that the most severe failures in educational technology stem from vendor capture, absent teacher professional learning, and missing pedagogical friction rather than cognitive screen effects alone.
+   The collapse of the LAUSD 1:1 iPad initiative (2013–2015) and UNESCO’s GEM Report (2023) indicate that the most severe failures in educational technology stem from vendor capture, absent teacher professional learning, and missing pedagogical friction rather than cognitive screen effects alone.
 
 ---
 
@@ -29,14 +29,14 @@ This evidence matrix synthesizes peer-reviewed meta-analyses, large-scale longit
 
 | Source ID | Citation (APA 7) | Study Design | Policy / Mechanism | Grade Band | Friction Dimension | Key Findings & Effect Sizes | Critical Limitations |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `TAM_2011_META` | Tamim et al. (2011) | 2nd-Order Meta-Analysis | Tech Integration vs. Drill | K–12 | Noetic | Cognitive construction ($g = 0.42$) vs. direct delivery ($g = 0.16$). | Pre-smartphone / Pre-AI corpus. |
-| `ZHE_2016_ONE_TO_ONE` | Zheng et al. (2016) | Meta-Analysis | 1:1 Laptop Programs | K–12 | Infrastructural | Modest positive gains in writing ($d=0.20$), science ($d=0.25$), math ($d=0.17$). | Spans 2001–2015; pre-generative AI essay tools. |
+| `TAM_2011_META` | Tamim et al. (2011) | 2nd-Order Meta-Analysis | Support of instruction vs. direct instruction | K–12 | Noetic | Overall mean $ES = 0.35$. Table 3: support of instruction $ES = 0.42$ (k = 10) vs. direct instruction $ES = 0.31$ (k = 15). | Pre-smartphone / pre-AI corpus. Both subgroups are moderate positive effects. |
+| `ZHE_2016_ONE_TO_ONE` | Zheng et al. (2016) | Meta-Analysis | 1:1 Laptop Programs | K–12 | Infrastructural | Significant positive average effects in English, writing, mathematics, and science across 10 studies. **Subject-area values and metric unverified** — see VERIFICATION.md. | Spans 2001–2015; pre-generative AI essay tools. |
 | `ODG_2020_REVIEW` | Odgers & Jensen (2020) | Systematic Review | Aggregate Screen Quota | 6–12 | Existential | Screen time associations with mental health are trivial ($r \approx -0.05$). | Focuses on personal phones/social media, not LMS. |
 | `DUTCH_2025_EVAL` | Netherlands national evaluation (reported March 2025) | National Policy Eval | Phone Ban / Storage | K–12 | Infrastructural | Of 317 secondary school leaders surveyed, ~75% report improved concentration, ~59% improved school climate, and ~28% report academic gain. | School-leader perceptions, not standardized attainment measures. Self-report from those who implemented the policy. |
 | `SMART_2025_STUDY` | Goodyear et al. (2025) | Cross-Sectional Observational | Restrictive vs. permissive school phone policies | 6–9 (ages 12–15) | Infrastructural | No difference in mental wellbeing, mental health, sleep, physical activity, attainment, or disruptive behaviour across 30 UK schools (n=1,227). Restrictive schools showed lower phone and social media use *during school time* but no difference in overall weekday or weekend use. | Cross-sectional: compares schools that already differed, so it cannot establish what would follow if a given school changed its policy. |
 | `SWE_2024_TEXTBOOK` | Swedish Gov. (2024) | National Policy Eval | Analogue Textbooks & Print | K–5 | Multi-layer | Reversed preschool digital mandate; €100M+ for physical textbooks after PIRLS dip. | Long-term recovery data still emerging. |
 | `UNESCO_2023_GEM` | UNESCO GEM Report Team (2023) | Global Policy Report | Screen Quota / Rights | K–12 | Multi-layer | Tech must be subordinate to human pedagogy; 89% of pandemic tools risked student privacy. | Spans wide global infrastructure differences. |
-| `LAUSD_2015_IPAD_AUDIT` | Lapin / LAUSD IG (2015) | District Case Study | 1:1 iPad Procurement | K–12 | Infrastructural | $1.3B bond program cancelled; bypass in 48h; incomplete Pearson curriculum. | Specific to procurement/contract context. |
+| `LAUSD_2015_IPAD_AUDIT` | LAUSD Office of the Inspector General (2015) | District Case Study | 1:1 iPad Procurement | K–12 | Infrastructural | Bond-funded 1:1 initiative abandoned after procurement irregularities and an incomplete Pearson curriculum; students at several campuses removed security filters. | Procurement context. **The $1.3B figure and the 48-hour bypass timing are not traced to the OIG report** — see VERIFICATION.md. |
 | `DEL_2018_READING_META` | Delgado et al. (2018) | Meta-Analysis | Print vs. Screen Reading | K–12 | Noetic | Significant print advantage for comprehension ($g = -0.21$). | Lab/classroom reading tasks; no adaptive e-readers. |
 
 ---
